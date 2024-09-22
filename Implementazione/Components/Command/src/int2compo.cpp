@@ -1,0 +1,23 @@
+#include <string>
+#include "command.h"
+
+const char* componentToString(components comp) {
+    switch (comp) {
+        case Camera:
+            return "Camera";
+        case Conditioner:
+            return "Conditioner";
+        case Device:
+            return "Device";
+        case Light:
+            return "Light";
+        case Sensor:
+            return "Sensor";
+        case SensorGarden:
+            return "SensorGarden";
+        case Irrigator:
+            return "Irrigator";
+        default:
+            return "Unknown";
+    }
+}
